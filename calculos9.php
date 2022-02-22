@@ -52,7 +52,7 @@
         ?>
 
         <div class="container">
-            <form class="col s12" action="<?php echo 'calculos3.php?N='.$N.'&Y='.$Y.'&X='.$X.'&Probabilidad='.$probabilidad.''; ?>" method="post">
+            <form class="col s12" action="<?php echo 'calculos10.php?N='.$N.'&Y='.$Y.'&X='.$X.'&Probabilidad='.$probabilidad.''; ?>" method="post">
                 <div class="card-panel">
                     Problema del ebrio: <br><br>
                     Un ebrio está parado en una esquina, cuando decide caminar para que le pase el efecto. 
