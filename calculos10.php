@@ -52,7 +52,7 @@
         ?>
 
         <div class="container">
-            <form class="col s12" action="<?php echo 'index.php?p='; ?>" method="post">
+            <form class="col s12" action="index.php? " method="post">
                 <div class="card-panel">
                     Problema del ebrio: <br><br>
                     Un ebrio está parado en una esquina, cuando decide caminar para que le pase el efecto. 
@@ -76,15 +76,49 @@
 
         $X1 = abs($X);
         $Y1 = abs($Y);
+        $XT = $X1 + $Y1;
 
-        echo '<div class="container">
-            <div class="card-panel">
-                Número aleatorio de posición: '. $probabilidad .' <br>
-                Cuadras caminadas: '. $N .'<br>
-                Posición del ebrio (X, Y): ('.$X.', '.$Y.') <br>
-                El ebrio se encuentra a '.$X1+$Y1.' calles de donde inició.
-            </div>
-        </div>';
+        if ($X1 === 2 && $Y1 === 0) {
+            echo '<div class="container">
+                <div class="card-panel">
+                    Número aleatorio de posición: '. $probabilidad .' <br>
+                    Cuadras caminadas: '. $N .'<br>
+                    Posición del ebrio (X, Y): ('.$X.', '.$Y.') <br>
+                    El ebrio se encuentra a '.$X1+$Y1.' calles de donde inició. Cumple con la probabilidad. <br>
+                </div>
+            </div>';
+        }
+        else if ($X1 === 0 && $Y1 === 2) {
+            echo '<div class="container">
+                <div class="card-panel">
+                    Número aleatorio de posición: '. $probabilidad .' <br>
+                    Cuadras caminadas: '. $N .'<br>
+                    Posición del ebrio (X, Y): ('.$X.', '.$Y.') <br>
+                    El ebrio se encuentra a '.$X1+$Y1.' calles de donde inició. Cumple con la probabilidad. <br>
+                </div>
+            </div>';
+        }
+        else if ($XT === 2) {
+            echo '<div class="container">
+                <div class="card-panel">
+                    Número aleatorio de posición: '. $probabilidad .' <br>
+                    Cuadras caminadas: '. $N .'<br>
+                    Posición del ebrio (X, Y): ('.$X.', '.$Y.') <br>
+                    El ebrio se encuentra a '.$X1+$Y1.' calles de donde inició. Cumple con la probabilidad. <br>
+                </div>
+            </div>';
+        }
+        else {
+            echo '<div class="container">
+                <div class="card-panel">
+                    Número aleatorio de posición: '. $probabilidad .' <br>
+                    Cuadras caminadas: '. $N .'<br>
+                    Posición del ebrio (X, Y): ('.$X.', '.$Y.') <br>
+                    El ebrio se encuentra a '.$X1+$Y1.' calles de donde inició. No cumple con la probabilidad. <br>
+                </div>
+            </div>';
+        }
+
         ?>
 
     <!--SCRIPT-->
