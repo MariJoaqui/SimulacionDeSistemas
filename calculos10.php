@@ -52,7 +52,7 @@
         ?>
 
         <div class="container">
-            <form class="col s12" action="index.php? " method="post">
+            <form class="col s12" action="index.php" method="post">
                 <div class="card-panel">
                     Problema del ebrio: <br><br>
                     Un ebrio está parado en una esquina, cuando decide caminar para que le pase el efecto. 
@@ -84,7 +84,7 @@
                     Número aleatorio de posición: '. $probabilidad .' <br>
                     Cuadras caminadas: '. $N .'<br>
                     Posición del ebrio (X, Y): ('.$X.', '.$Y.') <br>
-                    El ebrio se encuentra a '.$X1+$Y1.' calles de donde inició. Cumple con la probabilidad. <br>
+                    El ebrio se encuentra a '.$XT.' calles de donde inició. Cumple con la probabilidad. <br>
                 </div>
             </div>';
         }
@@ -94,7 +94,7 @@
                     Número aleatorio de posición: '. $probabilidad .' <br>
                     Cuadras caminadas: '. $N .'<br>
                     Posición del ebrio (X, Y): ('.$X.', '.$Y.') <br>
-                    El ebrio se encuentra a '.$X1+$Y1.' calles de donde inició. Cumple con la probabilidad. <br>
+                    El ebrio se encuentra a '.$XT.' calles de donde inició. Cumple con la probabilidad. <br>
                 </div>
             </div>';
         }
@@ -104,7 +104,7 @@
                     Número aleatorio de posición: '. $probabilidad .' <br>
                     Cuadras caminadas: '. $N .'<br>
                     Posición del ebrio (X, Y): ('.$X.', '.$Y.') <br>
-                    El ebrio se encuentra a '.$X1+$Y1.' calles de donde inició. Cumple con la probabilidad. <br>
+                    El ebrio se encuentra a '.$XT.' calles de donde inició. Cumple con la probabilidad. <br>
                 </div>
             </div>';
         }
@@ -114,7 +114,7 @@
                     Número aleatorio de posición: '. $probabilidad .' <br>
                     Cuadras caminadas: '. $N .'<br>
                     Posición del ebrio (X, Y): ('.$X.', '.$Y.') <br>
-                    El ebrio se encuentra a '.$X1+$Y1.' calles de donde inició. No cumple con la probabilidad. <br>
+                    El ebrio se encuentra a '.$XT.' calles de donde inició. No cumple con la probabilidad. <br>
                 </div>
             </div>';
         }
