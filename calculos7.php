@@ -70,7 +70,7 @@
                     <button class="btn waves-effect waves-light" type="submit" name="action">Probar</button>
                 </div>
             </form>
-        </div>}
+        </div>
 
         <?php
 
